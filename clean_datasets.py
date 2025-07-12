@@ -29,10 +29,10 @@ orders_clean = orders[[
     "CreatedOn",
     "TotalPrice",
     "Status",
-    "DiscountCode",
+    # "DiscountCode", # NaN >40%
     "ShippingAmount",
-    "ShippingTaxAmount",
-    "ShippingIncludedTaxes",
+    # "ShippingTaxAmount",   # NaN >40%
+    # "ShippingIncludedTaxes",  # NaN >40%
     # Nice-to-have enrichments
     "DeliveryName",
     "DeliveryAddress",
@@ -40,16 +40,16 @@ orders_clean = orders[[
     "DeliveryCity",
     "DeliveryCountry",
     "InvoiceCountry",
-    "FullInvoiceAddress",
+    # "FullInvoiceAddress",  # NaN >40%
     "TotalProducts",
     "TotalPicked",
     "TotalPicklists",
     "PicklistId",
     "ShippingIsUpdated",
-    "ShippingProvider",
-    "ShippingLabelUpdatedOn",
+    # "ShippingProvider",  # NaN >40%
+    # "ShippingLabelUpdatedOn",   # NaN >40%
     "Reference",
-    "ExternalApiSource",
+    # "ExternalApiSource", #  # NaN >40%
     "MaP",
     "IdTemplate",
     "JaarOrder",
@@ -72,8 +72,8 @@ items_clean = items[[
     "Price",
     # Nice-to-have
     "VatgroupId",
-    "DefaultLocationsId",
-    "LocationName",
+    # "DefaultLocationsId",  # NaN >40%
+    # "LocationName",   # NaN >40%
     "HasParts",
     "AmountCancelled",
     "Weight",
@@ -95,11 +95,11 @@ products_clean = products[[
     # 👍 Nice-to-have
     "Name",
     "Category",
-    "PcsSold365Days",
-    "Predict30dPcs",
-    "DaysToEmptyStock",
+    # "PcsSold365Days",  # NaN >40%
+    # "Predict30dPcs",  # NaN >40% 
+    # "DaysToEmptyStock",  # NaN >40%
     "ToBuy",
-    "ToBuyValue",
+    # "ToBuyValue",  # NaN >40%
     "Weight",
     "SupplierName",
     "DeliveryTime"

@@ -501,8 +501,8 @@ if __name__ == "__main__":
     plt.rcParams['figure.dpi'] = 100
     
     # Analyze orders
-    # orders_df = pd.read_csv("data/cleaned/orders_clean.csv", parse_dates=["CreatedOn"])
-    # analysis_results = analyze_dataframe(orders_df, "Orders")
+    orders_df = pd.read_csv("data/cleaned/orders_clean.csv", parse_dates=["CreatedOn"])
+    analysis_results = analyze_dataframe(orders_df, "Orders")
     
     # You can also analyze other datasets:
     # customers_df = pd.read_csv("data\cleaned\customers_clean.csv")
@@ -514,8 +514,8 @@ if __name__ == "__main__":
     # products_df = pd.read_csv("data\cleaned\products_clean.csv")
     # analyze_dataframe(products_df, "Products")
     
-    stock_df = pd.read_csv("data\cleaned\stock_clean.csv")
-    analyze_dataframe(stock_df, "Stock")
+    # stock_df = pd.read_csv("data\cleaned\stock_clean.csv")
+    # analyze_dataframe(stock_df, "Stock")
     
     # stock_hist_df = pd.read_csv("data/oahdotnet_live_StockHistory.csv", parse_dates=["UpdatedOn"])
     # analyze_dataframe(stock_hist_df, "StockHistory")
