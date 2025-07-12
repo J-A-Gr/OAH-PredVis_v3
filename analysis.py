@@ -508,14 +508,14 @@ if __name__ == "__main__":
     # customers_df = pd.read_csv("data\cleaned\customers_clean.csv")
     # analyze_dataframe(customers_df, "Customers")
     
-    items_df = pd.read_csv("data\cleaned\order_items_clean.csv", parse_dates=["CreatedOn"])
-    analyze_dataframe(items_df, "OrderItems")
+    # items_df = pd.read_csv("data\cleaned\order_items_clean.csv", parse_dates=["CreatedOn"])
+    # analyze_dataframe(items_df, "OrderItems")
     
-    # products_df = pd.read_csv("data/oahdotnet_live_Products.csv")
+    # products_df = pd.read_csv("data\cleaned\products_clean.csv")
     # analyze_dataframe(products_df, "Products")
     
-    # stock_df = pd.read_csv("data/oahdotnet_live_ProductsStock.csv")
-    # analyze_dataframe(stock_df, "Stock")
+    stock_df = pd.read_csv("data\cleaned\stock_clean.csv")
+    analyze_dataframe(stock_df, "Stock")
     
     # stock_hist_df = pd.read_csv("data/oahdotnet_live_StockHistory.csv", parse_dates=["UpdatedOn"])
     # analyze_dataframe(stock_hist_df, "StockHistory")

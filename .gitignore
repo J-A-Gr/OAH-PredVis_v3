@@ -212,3 +212,4 @@ __marimo__/
 # asmeniniai folderiai ignoruoti
 data/
 info/
+data_analysis_visuals/
