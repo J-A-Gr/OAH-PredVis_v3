@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Directories
-SRC_DIR = "data"
+SRC_DIR = "data/raw"
 DST_DIR = "data/cleaned"
 os.makedirs(DST_DIR, exist_ok=True)
 
@@ -75,7 +75,7 @@ items_clean = items[[
     # "DefaultLocationsId",  # NaN >40%
     # "LocationName",   # NaN >40%
     "HasParts",
-    "AmountCancelled",
+    # "AmountCancelled",
     "Weight",
     "CreatedOn"
 ]]
@@ -92,6 +92,7 @@ products_clean = products[[
     "Id",
     "Price",
     "TotalStock",
+    "ProductCode",  # change name to SKU
     # 👍 Nice-to-have
     "Name",
     "Category",
@@ -120,10 +121,10 @@ stock_clean = stock[[
     "Freestock",
     # (optional) "Stock",
     # 👍 Nice-to-have
-    "Reserved",
-    "ReservedBackorders",
-    "ReservedPicklists",
-    "ReservedAllocations",
+    # "Reserved",
+    # "ReservedBackorders",
+    # "ReservedPicklists",
+    # "ReservedAllocations",
     "WarehousesId"
 ]]
 
