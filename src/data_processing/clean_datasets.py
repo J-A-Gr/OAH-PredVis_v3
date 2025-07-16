@@ -39,7 +39,7 @@ orders_clean = orders[[
     "DeliveryZipcode",
     "DeliveryCity",
     "DeliveryCountry",
-    "InvoiceCountry",
+    # "InvoiceCountry",
     # "FullInvoiceAddress",  # NaN >40%
     "TotalProducts",
     "TotalPicked",
